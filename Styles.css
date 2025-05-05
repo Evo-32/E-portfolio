@@ -475,7 +475,7 @@ margin-top: 40px;
 }
 /* services / skills*/
 .service .container {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 .service .service-item{
     margin-bottom: 30px;
@@ -516,7 +516,7 @@ margin-top: 40px;
 .service .service-item .service-item-inner:hover .icon{
     background: var(--skin-color);
 }
-.service .service-item .service-item-inner .icon .fab,
+.service .service-item .service-item-inner:hover .icon .fab,
 .service .service-item .service-item-inner:hover .icon .fa{
     font-size: 25px;
     color: white;
@@ -534,35 +534,49 @@ margin-top: 40px;
     line-height: 25px;
     color: var(--text-black-700);
 }
-/*PORTFOLIO*/
-.portfolio .container{
-    padding-bottom: 40px;
-}
-.portfolio .portfolio-heading{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-.portfolio .portfolio-heading h2{
-    color: var(--text-black-900);
-    font-weight: 500;
-}
-.portfolio .portfolio-item{
+/* Portfolio  */
+.portfolio .service-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    margin-bottom: 30px;
-}
-.portfolio .portfolio-item-inner{
-    border: 6px solid var(--bg-black-100);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-
-}
-.portfolio .portfolio-item-inner .portfolio-img img{
-    width: 100%;
-    display: block;
-}
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .portfolio .service-item-inner {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio .service-item-inner:hover {
+    transform: translateY(-5px);
+  }
+  
+  .portfolio .service-item .icon {
+    font-size: 40px;
+    color: var(--skin-color); 
+    margin-bottom: 15px;
+  }
+  
+  .portfolio .service-item h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--text-black-900);
+  }
+  
+  .portfolio .service-item p a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .portfolio .service-item p a:hover {
+    text-decoration: underline;
+  }
+  
 /*CONTACT*/
 .contact-title{
     color: var(--skin-color);
